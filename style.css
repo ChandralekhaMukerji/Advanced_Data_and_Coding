@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fd9323;
+    color: #555;
+    /*First pref: lato, if no internet then arial otherwise whatever sans-serif is there in system*/
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+h2 {
+    color: #fd9323;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.jumbotron {
+    font: 400 15px Playfair+Display;
+    background-color: #efeff0;
+    color: #ed7d07;
+    padding: 100px 25px;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.bg-grey {
+    background-color: #fff;
+}
+
+.black {
+    color: #111111;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #fff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a,
+.navbar,
+.navbar-brand {
+    color: #111111 !important;
+}
+
+
+.navbar-nav li a:hover,
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #5b0000 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #930000;
+}
+
+
+.headerimage {
+    width: 100%
+}
+
+#alignleft {
+    text-align: left;
+}
+
+#alignright {
+    text-align: right;
+}
+
+
+.author-image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+}
+
+.blog-post img {
+    height: 150px;
+    width: auto;
+}
+
+.social-image {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+}
+
+#container-map {
+    height: 500px;
+    min-width: 310px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #efeff0;
+}
+
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
