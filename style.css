@@ -16,6 +16,7 @@ html {
 
 h2 {
     color: #fd9323;
+    text-align: left;
 }
 
 .clearfix:after {
@@ -25,14 +26,18 @@ h2 {
 }
 
 .jumbotron {
-    font: 400 15px Playfair+Display;
-    background-color: #efeff0;
+    font: 200 10px Playfair+Display;
+    background-color: #f8f8f8;
     color: #ed7d07;
     padding: 100px 25px;
 }
 
+.jumbotron h1 {
+    font-size: 60px;
+}
+
 .container-fluid {
-    padding: 60px 50px;
+    padding: 30px 30px;
 }
 
 .bg-grey {
@@ -60,6 +65,10 @@ h2 {
     color: #111111 !important;
 }
 
+.navbar-brand {
+    font-size: 12px;
+    font-weight: 200;
+}
 
 .navbar-nav li a:hover,
 .navbar-nav li.active a {
@@ -87,10 +96,15 @@ footer .glyphicon {
     text-align: left;
 }
 
-#alignright {
-    text-align: right;
+#aligntext {
+    text-align: justify;
+    padding-left: 90px;
+    padding-right: 20px;
 }
 
+.author-box {
+    background-color: #f8f8f8;
+}
 
 .author-image {
     height: 100px;
@@ -113,9 +127,7 @@ footer .glyphicon {
 }
 
 #container-map {
-    height: 500px;
-    min-width: 310px;
-    max-width: 800px;
+    height: 400px;
     margin: 0 auto;
     background-color: #efeff0;
 }
@@ -124,4 +136,14 @@ footer .glyphicon {
     margin-top: 10em;
     text-align: center;
     color: gray;
+}
+
+.immigration-img {
+    float: left;
+    height: auto;
+    width: auto;
+}
+
+.margintop {
+    margin-top: 150px;
 }

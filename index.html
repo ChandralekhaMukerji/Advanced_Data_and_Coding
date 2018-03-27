@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>PAGE TITLE</title>
+    <title>IMMIGRANTS IN DENMARK’S ECONOMY</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,6 +22,7 @@
     <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
     <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="script.js"></script>
 
 
@@ -35,18 +36,18 @@
 											<span class="icon-bar"/>
 											<span class="icon-bar"/>
 										</button>
-                <a class="navbar-brand" href="#myPage">HEADING</a>
+                <a class="navbar-brand" href="#myPage">IMMIGRANTS AND THE DANISH WELFARE STATE</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#introduction">INTRO</a>
+                        <a href="#introduction">What</a>
                     </li>
                     <li>
-                        <a href="#tab1">Tab#1</a>
+                        <a href="#tab1">Why</a>
                     </li>
                     <li>
-                        <a href="#tab2">Tab#2</a>
+                        <a href="#tab2">And Who...</a>
                     </li>
                 </ul>
             </div>
@@ -54,38 +55,163 @@
     </nav>
 
     <div class="jumbotron text-center">
-        <h1>YOUR MAIN HEADING GOES HERE !! </h1>
-        <p>And the punchline goes here......keep it down to one line only</p>
+        <h1>Are immigrants a threat to the Danish welfare system?</h1>
+        <p style="color:#000000;">The answer is no. In the long run, they are contributors even when drawing lowest wages.</p>
     </div>
 
     <!-- Container (Introduction) -->
     <div id="introduction" class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <h2>ABOUT HEADING IF REQUIRED</h2>
-                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoomnifoodncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+                <p align="justify">Like many European countries, immigration and it being a burden on the state welfare system is an ongoing debate in Denmark as well. However, in the recent years things have been heating up politically and policies have been so harsh that it has caught international attention.</p>
+                <p align="justify"> The present centre-right government have been taking several steps to make immigration to Denmark less attractive. Starting with the infamous 2016 law that empowered Danish authorities to seize any assets exceeding $1,450 (except items of “sentimental value,” such as wedding rings) from asylum-seekers in order to help pay for the migrants’ subsistence in the country. More recently, the 22 initiative-point “no ghettos by 2030” plan that proposes doubling the punishment for crimes committed in “ghettos” (areas with high immigrant population) and reducing welfare benefits for immigrants who move into these areas. "Ghetto areas today are characterized by far too many residents who do not go to work and actively contribute to the Danish society. It is not only an economic challenge for our society. It is also a huge challenge that so many people have ended without connection to the labor market,” said Employment Minister Troels Lund Poulsen, while rolling out these policy changes last month.
+                </p>
+                <p align="justify"> Employment among non-western immigrants remains particularly low at only 30 percent after 3 years of residence, against 75 percent for native Danes. In 2016, the country spent more than 2.5 billion dollars on transfer revenue for people living in the country's ghettos. Although extreme, these measures are intended towards fixing those numbers.
+                </p>
+                <p align="justify"> However, what is surprising is that the border tightening measures are not just restricted towards refugees and asylum seekers. A report released last year by the Ministry of Finance stated that in 2014 immigrants and their descendants cost public finances 28 billion. Immigrants and their descendants account for 10 percent of the total population.</p>
+                <p align="justify">“It is too much money,” the official statement said and therefore, as a corrective measure “both the current government and the former government have implemented a consistent immigration policy, with 50 concrete tightenings (policy changes) between 2014 and 2017,” the release added. This includes the revoking of the green card scheme, a point-based 18-month permit for skilled immigrants that allowed a person to live and work in Denmark if they could score at least 100 points according to criteria such as age, language skills, work experience and education. All these changes has earned Denmark the reputation of one of the least attractive countries for immigrants in Western Europe. This is not desirable as the country has an extremely low unemployment rate (4.1%) and many sectors in the economy are facing labour shortages.</p>
             </div>
         </div>
     </div>
 
     <!-- Container (data) -->
-    <div id="tab1" class="container-fluid text-center">
+    <div id="tab1" class="container-fluid">
         <div class="row">
-            <div class="col-sm-4">
-                <img class="headerimage" src="img/data.jpg">
-            </div>
-            <div id="alignleft" class="col-sm-8">
-                <h2>TAB 1: HEADING</h2>
-                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoomnifoodncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</p>
+            <div class="col-sm-12">
+                <h2>Immigrants are contributors </h2>
+                <!-- Plotly chart will be drawn inside this div -->
+                <div id="plotly-div" class="plotly">
+                    <script>
+                        trace1 = {
+                            x: ['', '12.3', '7.6', '6.6', '6.3', '7.8'],
+                            y: ['', '1.3', '1.2', '1.3', '1.1', '1.2'],
+                            marker: {
+                                cauto: true,
+                                cmax: 6.7,
+                                cmin: 5.6,
+                                color: ['', '6.7', '5.6', '6.1', '5.8', '6.4'],
+                                colorbar: {
+                                    title: ''
+                                },
+                                colorscale: [
+                                    ['0', 'rgb(220,220,220)'],
+                                    ['0.2', 'rgb(245,195,157)'],
+                                    ['0.4', 'rgb(245,160,105)'],
+                                    ['1', 'rgb(178,10,28)']
+                                ],
+                                opacity: 0.6,
+                                showscale: true,
+                                size: ['', '12.3', '7.6', '6.6', '6.3', '7.8'],
+                                sizemode: 'area',
+                                sizeref: 0.00318367346939,
+                                symbol: 'hexagon2'
+                            },
+                            mode: 'markers+text',
+                            name: 'percentage unemployment claiming benefits',
+                            text: ['', 'Hovedstaden', 'Midt', 'Nordjylland', 'Sjaelland', 'Syd'],
+                            textfont: {
+                                family: 'Overpass',
+                                size: 8
+                            },
+                            type: 'scatter',
+                            uid: '214238'
+                        };
+                        data = [trace1];
+                        layout = {
+                            annotations: [{
+                                x: -0.02,
+                                y: -0.220588235294,
+                                showarrow: false,
+                                text: 'Source: <a href="http://www.statbank.dk/statbank5a/default.asp?w=1366">Statbank.dk</a>',
+                                xanchor: 'left',
+                                xref: 'paper',
+                                yref: 'paper'
+                            }, {
+                                x: 1.12450066578,
+                                y: 0.979411764706,
+                                showarrow: false,
+                                text: '<b>Unemployment Rate</b>',
+                                xanchor: 'middle',
+                                xref: 'paper',
+                                yanchor: 'bottom',
+                                yref: 'paper'
+                            }, {
+                                x: 0.5,
+                                y: 1.10882352941,
+                                showarrow: false,
+                                text: '',
+                                xref: 'paper',
+                                yref: 'paper'
+                            }, {
+                                x: 0.5,
+                                y: -0.3,
+                                showarrow: false,
+                                text: '(Bigger the hexagon, higher the percentage of immigrant population)',
+                                xref: 'paper',
+                                yref: 'paper'
+                            }, {
+                                x: 0.00798934753662,
+                                y: 1.13823529412,
+                                showarrow: false,
+                                text: '10-year averages show there is no direct co-relation between density of immigrants in a region and high unemployment benefit claims',
+                                xref: 'paper',
+                                yref: 'paper'
+                            }],
+                            autosize: true,
+                            hovermode: 'closest',
+                            title: 'In the long-run, more immigrants do not mean higher welfare bills',
+                            xaxis: {
+                                autorange: true,
+                                range: [5.56248744011, 13.1792116076],
+                                title: 'Percentage of immigrant population',
+                                type: 'linear'
+                            },
+                            yaxis: {
+                                autorange: true,
+                                range: [1.05293681956, 1.35966742542],
+                                title: 'Percentage of population claiming benefits',
+                                type: 'linear'
+                            }
+                        };
+                        Plotly.plot('plotly-div', {
+                            data: data,
+                            layout: layout
+                        });
+
+                    </script>
+                </div>
+                <br><br>
+                <p align="justify">
+                    The tighter immigration policies even for skilled labour is surprising as there is a labour gap in the country. Last year, the Minister for economic affairs and the interior, Simon Emil Ammitzboll had released a warning about how this labour shortage in Denmark is potential threat to the economic growth as the country is soon approaching a situation of potential capacity constraints.
+                </p>
+                <p align="justify">The Confederation of Danish Industry (DI), which represents about 10,000 corporations, says 40 percent of the confederation’s members have had to abandon their efforts to find the right people to fill vacancies. Although not all sectors are facing a severe situation, things are particularly bad in sectors such as agriculture, manufacturing, services, construction and the job titles range from handyman positions such as plumbers and electricians to engineers and IT consultants.
+                </p>
+                <p align="justify">Both, the IMF and European Commission in their respective country reports, have suggested better integration of the immigrants and attracting more skilled labour as one of the solutions to tackle this situation. </p>
+                <p align="justify">
+                    “The government policies since 2016 on foreign labour are not favourable,” says Steen Nielsen, chief of labor policy at DI, , the Copenhagen-based confederation. Other European countries are grappling with similar labour shortages. “There’s a competition to attract the right workers and tougher immigration policies are making it harder for companies to recruit,” adds Nielsen.
+                </p>
+                <p align="justify">
+                    As far as assimilation into the welfare system is concern, last 10-years data collected for all the five regions of Denmark shows that there is no direct correlation between number of immigrants in a region to higher welfare benefits claimed (see chart). The Capital Region of Denmark (Region Hovedstaden), which includes the Copenhagen Metropolitan Area, has double the density of immigrants in the region than North Jutland (Nordjylland) and yet both have the same percentage of population claiming unemployment benefits, 1.3 percent. Zealand (Sjælland), which has the lowest density of immigrant population (5.8 percent), still has 1.1% of the population claiming welfare benefits.
+                </p>
+                <p align="justify">
+                    As far as assimilation and effects on public finances are concern, governments’ own report released last year suggests even unskilled refugees have great potential. With as low a salary as DKK 200,000 yearly, which is below the minimum wage, if a labour works or 40 hours a week, he is a net contributor, the report found.
+                </p>
+                <p align="justify">
+                    Another 2017 study by LSE also found EU immigrants in Denmark to be net contributors to the public purse. Foreigners from advanced economies tend to get jobs fast and generate tax money from the start. “The biggest positive contributors to public finances are immigrants from the western countries who come here to work. The same applies to immigrants from the eastern countries of the EU. But also immigrants from non-western countries such as China and India contribute positively,” the government report states.
+                </p>
+                <p align="justify">
+                    Going by these findings, Denmark has nothing to worry about. Last 30-years immigration numbers ( see map below) from the top 30 countries show that chunk of the migrants (89%) come from either EU nations, western countries or eastern rising economies like India and China. A mere 11% is from non-western countries, of which majority (55%) is from two war torn countries–Syria and Iraq.
+                </p>
             </div>
         </div>
     </div>
+
 
     <!-- Container (Data) -->
     <div id="tab2" class="container-fluid">
         <div class="row">
             <div class="col-sm-12 ">
-                <h2>TAB 2 : HEADING</h2>
+                <h2>The Great Migration</h2>
                 <div id="container-map">
                     <div class="loading">
                         <i class="icon-spinner icon-spin icon-large"></i> Loading data from Google Spreadsheets...
@@ -97,49 +223,512 @@
 
 
 
-    <div id="dropdown" class="container-fluid text-center">
+    <div class="container-fluid">
         <div class="row">
-            <div id="alignright" class="col-sm-6">
+            <div class="col-sm-6">
+                <figure>
+                    <img class="immigration-img" src="img/immigration_30.png" alt="Immigration in Last 30 Years">
+                </figure>
+            </div>
+            <div id="aligntext" class="col-sm-6 margintop container-fluid">
                 <form>
-                    Select a value:
+                    <b>Select a country for absolute numbers:</b>
                     <select id="mySelect" onchange="dropdownSelection()">
-														<option>select</option>
-														<option>value 1</option>
-														<option>value 2</option>
-														<option>value 3</option>
-														<option>value 4</option>
+														<option>--select country--</option>
+<option>													
+Abu Dhabi</option>
+<option>		
+Afghanistan</option>
+<option>		
+Africa </option>
+<option>		
+Albania</option>
+<option>		
+Algeria</option>
+<option>		
+Andorra</option>
+<option>		
+Angola</option>
+<option>		
+Antigua and Barbuda</option>
+<option>		
+Argentina</option>
+<option>		
+Armenia</option>
+<option>		
+Aruba</option>
+<option>		
+Asia </option>
+<option>		
+Australia</option>
+<option>		
+Austria</option>
+<option>		
+Azerbaijan</option>
+<option>		
+Bahamas</option>
+<option>		
+Bahrain</option>
+<option>		
+Bangladesh</option>
+<option>		
+Barbados</option>
+<option>		
+Belarus</option>
+<option>		
+Belgium</option>
+<option>		
+Belize</option>
+<option>		
+Benin</option>
+<option>		
+Bhutan</option>
+<option>		
+Bolivia</option>
+<option>		
+Bosnia and Herzegovina</option>
+<option>		
+Botswana</option>
+<option>		
+Brazil</option>
+<option>		
+British West Indies</option>
+<option>		
+Brunei</option>
+<option>		
+Bulgaria</option>
+<option>		
+Burkina Faso</option>
+<option>		
+Burundi</option>
+<option>		
+Cambodia</option>
+<option>		
+Cameroon</option>
+<option>		
+Canada</option>
+<option>		
+Cape Verde</option>
+<option>		
+Central African Republic</option>
+<option>		
+Chad</option>
+<option>		
+Chile</option>
+<option>		
+China</option>
+<option>		
+Colombia</option>
+<option>		
+Comoros</option>
+<option>		
+Congo</option>
+<option>		
+Congo, Republic</option>
+<option>		
+Cook Islands</option>
+<option>		
+Costa Rica</option>
+<option>		
+Croatia</option>
+<option>		
+Cuba</option>
+<option>		
+Curacao</option>
+<option>		
+Cyprus</option>
+<option>		
+Czech Republic</option>
+<option>		
+Czechoslovakia</option>
+<option>		
+Djibouti</option>
+<option>		
+Dominica</option>
+<option>		
+Dominican Republic</option>
+<option>		
+Dubai</option>
+<option>		
+East Timor</option>
+<option>		
+Ecuador</option>
+<option>		
+Egypt</option>
+<option>		
+El Salvador</option>
+<option>		
+Equatorial Guinea</option>
+<option>		
+Eritrea</option>
+<option>		
+Estonia</option>
+<option>		
+Ethiopia</option>
+<option>		
+Europe </option>
+<option>		
+Falkland Islands</option>
+<option>		
+Faroe Islands</option>
+<option>		
+Fiji</option>
+<option>		
+Finland</option>
+<option>		
+France</option>
+<option>		
+French Guiana</option>
+<option>		
+French territories in the Pacific</option>
+<option>		
+French West Indies</option>
+<option>		
+Gabon</option>
+<option>		
+Gambia</option>
+<option>		
+GDR</option>
+<option>		
+Georgia</option>
+<option>		
+Germany</option>
+<option>		
+Ghana</option>
+<option>		
+Greece</option>
+<option>		
+Greenland</option>
+<option>		
+Grenada</option>
+<option>		
+Guadeloupe</option>
+<option>		
+Guatemala</option>
+<option>		
+Guinea</option>
+<option>		
+Guinea-Bissau</option>
+<option>		
+Guyana</option>
+<option>		
+Haiti</option>
+<option>		
+Honduras</option>
+<option>		
+Hong Kong</option>
+<option>		
+Hungary</option>
+<option>		
+Iceland</option>
+<option>		
+India</option>
+<option>		
+Indochina</option>
+<option>		
+Indonesia</option>
+<option>		
+Iran</option>
+<option>		
+Iraq</option>
+<option>		
+Ireland</option>
+<option>		
+Israel</option>
+<option>		
+Italy</option>
+<option>		
+Ivory Coast</option>
+<option>		
+Jamaica</option>
+<option>		
+Japan</option>
+<option>		
+Jordan</option>
+<option>		
+Kazakhstan</option>
+<option>		
+Kenya</option>
+<option>		
+Kiribati</option>
+<option>		
+Kosovo</option>
+<option>		
+Kuwait</option>
+<option>		
+Kyrgyzstan</option>
+<option>		
+Laos</option>
+<option>		
+Latvia</option>
+<option>		
+Lebanon</option>
+<option>		
+Lesotho</option>
+<option>		
+Liberia</option>
+<option>		
+Libya</option>
+<option>		
+Liechtenstein</option>
+<option>		
+Lithuania</option>
+<option>		
+Luxembourg</option>
+<option>		
+Macao</option>
+<option>		
+Macedonia</option>
+<option>		
+Madagascar</option>
+<option>		
+Malawi</option>
+<option>		
+Malaysia</option>
+<option>		
+Maldives</option>
+<option>		
+Mali</option>
+<option>		
+Malta</option>
+<option>		
+Marshall Islands</option>
+<option>		
+Martinique</option>
+<option>		
+Mauritania</option>
+<option>		
+Mauritius</option>
+<option>		
+Mexico</option>
+<option>		
+Middle East </option>
+<option>		
+Moldova</option>
+<option>		
+Monaco</option>
+<option>		
+Mongolia</option>
+<option>		
+Montenegro</option>
+<option>		
+Morocco</option>
+<option>		
+Mozambique</option>
+<option>		
+Myanmar</option>
+<option>		
+Namibia</option>
+<option>		
+Nauru</option>
+<option>		
+Nepal</option>
+<option>		
+Netherlands</option>
+<option>		
+Netherlands Antilles</option>
+<option>		
+New Zealand</option>
+<option>		
+Nicaragua</option>
+<option>		
+Niger</option>
+<option>		
+Nigeria</option>
+<option>		
+North America </option>
+<option>		
+North Korea</option>
+<option>		
+North Yemen</option>
+<option>		
+Northern Ireland</option>
+<option>		
+Norway</option>
+<option>				
+Oman</option>
+<option>		
+Pacific Islands</option>
+<option>		
+Pakistan</option>
+<option>		
+Panama</option>
+<option>		
+Papua New Guinea</option>
+<option>		
+Paraguay</option>
+<option>		
+Peru</option>
+<option>		
+Philippines</option>
+<option>		
+Poland</option>
+<option>		
+Portugal</option>
+<option>		
+Puerto Rico</option>
+<option>		
+Qatar</option>
+<option>		
+Reunion</option>
+<option>		
+Romania</option>
+<option>		
+Russia</option>
+<option>		
+Rwanda</option>
+<option>		
+Saint Helena</option>
+<option>		
+Saint Kitts and Nevis</option>
+<option>		
+Saint Lucia</option>
+<option>		
+Saint Vincent and the Grenadines</option>
+<option>		
+Samoa</option>
+<option>		
+San Marino</option>
+<option>		
+Sao Tome and Principe</option>
+<option>		
+Saudi Arabia</option>
+<option>		
+Senegal</option>
+<option>		
+Serbia</option>
+<option>		
+Serbia and Montenegro</option>
+<option>		
+Seychelles</option>
+<option>		
+Sierra Leone</option>
+<option>		
+Sikkim</option>
+<option>		
+Singapore</option>
+<option>		
+Slovakia</option>
+<option>		
+Slovenia</option>
+<option>		
+Solomon Islands</option>
+<option>		
+Somalia</option>
+<option>		
+South Africa</option>
+<option>		
+South and central America </option>
+<option>		
+South Korea</option>
+<option>		
+South Sudan</option>
+<option>		
+Southwest Africa</option>
+<option>		
+Soviet Union</option>
+<option>		
+Spain</option>
+<option>		
+Spanish territories in Africa</option>
+<option>		
+Sri Lanka</option>
+<option>		
+Stateless</option>
+<option>		
+Sudan</option>
+<option>		
+Suriname</option>
+<option>		
+Swaziland</option>
+<option>		
+Sweden</option>
+<option>		
+Switzerland</option>
+<option>		
+Syria</option>
+<option>		
+Taiwan</option>
+<option>		
+Tajikistan</option>
+<option>		
+Tanzania</option>
+<option>		
+Thailand</option>
+<option>		
+Togo</option>
+<option>		
+Tonga</option>
+<option>		
+Trinidad and Tobago</option>
+<option>		
+Trucial Oman</option>
+<option>		
+Tunisia</option>
+<option>		
+Turkey</option>
+<option>		
+Turkmenistan</option>
+<option>		
+Tuvalu</option>
+<option>		
+Uganda</option>
+<option>		
+Ukraine</option>
+<option>		
+United Arab Emirates</option>
+<option>		
+United Kingdom</option>
+<option>		
+Uruguay</option>
+<option>		
+USA</option>
+<option>		
+Uzbekistan</option>
+<option>		
+Vanuatu</option>
+<option>		
+Vatican City State</option>
+<option>		
+Venezuela</option>
+<option>		
+Vietnam</option>
+<option>		
+West bank and Gaza</option>
+<option>		
+West Indies</option>
+<option>		
+Yemen</option>
+<option>		
+Yugoslavia</option>
+<option>		
+Yugoslavia, Federal Republic</option>
+<option>		
+Zambia</option>
+<option>		
+Zimbabwe</option>	
+
 													</select>
                 </form>
-            </div>
-            <div id="alignleft" class="col-sm-6">
+                <br>
                 <p id="mySelectResult" />
             </div>
         </div>
     </div>
 
-    <!-- Container (Conclusion) -->
-    <div id="conclusion" class="container-fluid bg-grey">
-        <div class="row">
-            <p>
-                <em> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoomnifoodncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.</em>
-            </p>
-        </div>
-    </div>
-
-
     <div class="clearfix" />
 
     <div class="author-box">
-        <img class="author-image" src="img/mickey.jpg" alt="Author Photo">
-        <p class="author-text">Mickey Mouse<br> Mickey Mouse is a funny animal cartoon character and the mascot of The Walt Disney Company. He was created by Walt Disney and Ub Iwerks at the Walt Disney Studios in 1928.</p>
+        <img class="author-image" src="img/tuki.jpg" alt="Author Photo">
+        <p class="author-text" align="justify">Chandralekha Mukerji<br></p>
         <p>
-            <a href="https://twitter.com/">
+            <a href="https://twitter.com/chandralekhaa">
 			<img class="social-image"src="img/twitter.png" height="20" width="20">
 			</a>
-            <a href="https://gmail.com/">
+            <a href="mailto:tukimukerji@gmail.com">
 			<img class="social-image"src="img/gmail.png" height="20" width="20">
 			</a>
-            <a href="https://linkedin.com/">
+            <a href="https://www.linkedin.com/in/chandralekha-mukerji-62a97616/">
 			<img class="social-image"src="img/linkedin.png" height="20" width="20">
 			</a>
         </p>
