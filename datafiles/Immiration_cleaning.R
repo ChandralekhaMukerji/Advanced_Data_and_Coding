@@ -130,4 +130,11 @@ nonEU_immigration_Total4 <- nonEU_immigration_Total3 %>%
   select(-X1, -X3, -X5, -X7, -X9)
 names(nonEU_immigration_Total4) <- c("year", "Region Hovedstaden", "Region Sj<e6>lland", "Region Syddanmark","Region Midtjylland", "Region Nordjylland")
                                     
+#tranpose Eu Immigration data to match and merge with non EU immigration data#
+
+EU_immigration.cleanT <- t(EU_immigration.clean)
+
+#merge#
+
+ImmigrationDF.merge <- merge(EU_immigration.cleanT, nonEU_immigration_Total4, by="region")
 

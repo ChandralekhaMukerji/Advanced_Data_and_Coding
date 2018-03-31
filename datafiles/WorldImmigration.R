@@ -10,7 +10,6 @@ library(scales)
 library(gridExtra)
 library(openxlsx)
 
-
 #Number of people who have immigrated to Denmark in last 30 years#
 world_immigration <- read_csv("interactive-journalism-module-master/interactive-journalism-module-master/interactive-journalism-module-master/Data Files/world_immigration.csv", 
                               col_names = FALSE)
@@ -48,10 +47,35 @@ names(world_populationWB.clean) <- c("region","population")
 world_populationWB.clean_Final <- world_populationWB.clean[-c(4, 28, 29, 37, 40, 54, 69, 74, 75, 79, 94, 129, 141, 146, 150, 172, 181, 182, 183, 184, 194, 213, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269), ]
 
 #matching World Bank population data's country names with Denmark's immigration data country names in order to be able to merge data sets#
-# Code: data.frame[row_number, column_number] = new_value#
+# Code: data.frame[row_number, column_number] = new_va
+#world_populationWB.clean_Final[48, 1] = 'Ivory_Coast'#
+#did not work#
 
-world_populationWB.clean_Final[48, 1] = Ivory_Coast
+#Write excel for mannually changing and matching country names to be able to merge dataframes#
+write.xlsx(world_populationWB.clean_Final, file = "C:/Users/Me/Documents/interactive-journalism-module-master/interactive-journalism-module-master/interactive-journalism-module-master/Data Files/world_populationWB.clean_Final.xlsx", asTable = TRUE)
 
+write.xlsx(world_immigration_TOTAL_Clean, file = "C:/Users/Me/Documents/interactive-journalism-module-master/interactive-journalism-module-master/interactive-journalism-module-master/Data Files/world_immigration_TOTAL_Clean.xlsx", asTable = TRUE)
+
+#merging#
+
+world_populationWB_clean_FinalF <- read_csv("interactive-journalism-module-master/interactive-journalism-module-master/interactive-journalism-module-master/Data Files/world_populationWB.clean_FinalF.csv")
+
+world_immigration_TOTAL_CleanF <- read_csv("interactive-journalism-module-master/interactive-journalism-module-master/interactive-journalism-module-master/Data Files/world_immigration_TOTAL_CleanF.csv")
+
+totalImmigration.merge <- merge(world_populationWB_clean_FinalF, world_immigration_TOTAL_CleanF, by="region")
+
+#normalising immigration data by making it "immigration per 1000"#
+
+totalImmigration.merge_Temp <- totalImmigration.merge %>%
+  mutate(x = population/1000, Immigration_per_1000 = Immigration/x)
+
+#keeping only relevant columns#
+
+totalImmigration.merge_Final <- totalImmigration.merge_Temp %>%
+  select(-population, -Immigration,-x)
+
+#download excel#
+write.xlsx(totalImmigration.merge_Final, file = "C:/Users/Me/Documents/interactive-journalism-module-master/interactive-journalism-module-master/interactive-journalism-module-master/Data Files/totalImmigration.merge_Final.xlsx", asTable = TRUE)
 
 
 
